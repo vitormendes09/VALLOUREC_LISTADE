@@ -1,7 +1,12 @@
 public class Ex1{
     public static void main(String[] args) {
 
-        System.out.println(CalcularFatorial(5));
+        long fatorial = CalcularFatorial(5);
+        if (fatorial == 0) {
+            System.out.println("O cálculo do fatorial falhou.");
+        } else {
+            System.out.println("Este é o fatorial do número proposto: " + fatorial);
+        }
 
     }
 
